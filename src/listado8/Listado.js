@@ -16,7 +16,19 @@ const jsonNombres = [
 ];
 
 const Listado = () => {
-  return <div>Listado</div>;
+  return (
+        <div>
+          Listado
+          {
+            jsonNombres.map((v,index) => {
+              return(
+                <div>
+                  <p>{v.nombre}</p>
+                </div>
+              )
+            })
+          }
+        </div>)
 };
 
 export default Listado;
